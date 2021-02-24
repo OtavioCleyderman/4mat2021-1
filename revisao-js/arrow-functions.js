@@ -1,5 +1,10 @@
 // No JS existe a função Math.pow() que faz isso, elevar ao quadrado
+// A rigor, a função abaixo não seria necessária, pois, usando
+// recursos nativos do JS, poderíamos escrever x ** 2 ou Math.pow(x, 2)
 
+// Características desta função:
+// 1) Tem apenas um parâmetro
+// 2) Seu corpo tem apenas uma linha, retornando valor
 function quadrado (x) {
     return x * x 
 }
@@ -20,6 +25,8 @@ Uma função nessas caracteristicas podem ser escritas de forma abreviada da seg
 2) Os parâmetros em torno do parâmetro foram omitidos 
 3) As chaves foram omitidas 
 4) A palavra returna também foi omitida
+5) Uma arrow function é uma função anônima. Portanto, caso se deseje
+chamá-la posteriormente, é necessário atribuí-la a uma variável.
 */ 
 let quadrado2 = x => x * x;
 console.log(quadrado2(7))
